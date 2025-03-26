@@ -44,14 +44,14 @@ const Navbar = () => {
         animate={{ x: 0, opacity: 1 }} 
         exit={{ x: 100, opacity: 0 }} 
         transition={{ type: "spring", stiffness: 120 }}
-        className='md:hidden bg-[rgba(0,0,0,0.78)] backdrop-blur-lg justify-start text-start 
-        text-white transition-all rounded-bl-xl rounded-tl-xl absolute top-20 right-0 w-3/5 max-w-[200px] py-4 px-6 pr-6'>
+        className='md:hidden bg-[rgba(0,0,0,0.69)] backdrop-blur-lg justify-start text-start 
+        text-white transition-all rounded-bl-xl rounded-tl-xl absolute top-25 right-0 w-3/5 max-w-[225px]  py-4 px-6 pr-6'>
         
-        <div className='flex justify-start items-center text-start'> 
-            <h1 className='pb-5 cursor-pointer' onClick={toggleMenu}>X CLOSE</h1>
+        <div className='flex justify-start items-center text-start' onClick={toggleMenu}> 
+            <h1 className='pb-5 cursor-pointer text-2xl' >X CLOSE</h1>
         </div>
         
-        <ul className='flex flex-col gap-4'>
+        <ul className='flex flex-col gap-6 text-xl'>
             {["ABOUT US", "PROJECTS", "PRICING", "TESTIMONIALS", "CONTACT US"].map((item, index) => (
                 <motion.a 
                     key={index} 
