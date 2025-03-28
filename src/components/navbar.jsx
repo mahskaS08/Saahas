@@ -1,14 +1,28 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    useEffect(() => {
+       if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        }
+        else {
+            document.body.style.overflow = 'auto';
+        }  
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }
+    , [isMenuOpen]);
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
 
     return (
         <div className='absolute top-0 left-0 w-full z-10'>
