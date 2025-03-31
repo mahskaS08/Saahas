@@ -30,9 +30,8 @@ const Footer = () => {
             <div className="flex flex-col w-full lg:w-3/4">
             <h3 className="text-xl font-bold mb-4">About Saahas Infrabuild</h3>
             <p className="text-md text-gray-700 text-justify leading-relaxed">
-                Established in 1990, Godrej Properties is the first real estate company to have ISO certification. 
-                The company is developing landmark projects in 12 cities across India, covering over 18.58 million 
-                square meters.
+                Established in 2022. 
+                The company aims to provide sustainable and innovative real estate solutions, ensuring customer satisfaction and contributing to the development of modern infrastructure.
             </p>
             </div>
 
@@ -42,11 +41,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-700 hover:text-gray-500">Home</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-gray-500">About Us</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-gray-500">Projects</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-gray-500">Careers</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-gray-500">Contact</a></li>
+              <li><a href="#Header" className="text-gray-700 hover:text-gray-500">Home</a></li>
+              <li><a href="#Header" className="text-gray-700 hover:text-gray-500">About Us</a></li>
+              <li><a href="#Projects" className="text-gray-700 hover:text-gray-500">Projects</a></li>
+              
+              <li><a href="#Contact" className="text-gray-700 hover:text-gray-500">Contact</a></li>
             </ul>
           </div>
 
