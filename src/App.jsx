@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Projects from './components/Projects'
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
     <div className='w-full overflow-hidden'>
       <Header></Header>
     </div>
-    
+    <Projects></Projects>
     <Footer />
 
     </>
